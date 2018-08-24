@@ -167,34 +167,29 @@
             <dd>
             <h2>Microsoft<span>Principal Engineer - Aug 2015-present - Redmond, WA</span></h2>
             <ul>
-                <li>A founding member of a team created to provide new data gateway technology for PowerBI</li>
-                <li>Contributing principal engineer maintaining the Analysis Services engine which underlies PowerBI</li>
+                <li>Founding member of a team created to create new data gateway technology for PowerBI</li>
+                <li>Contributing principal engineer for the Analysis Services engine / PowerBI</li>
             </ul>
             <p>
                 PowerBI is Microsoft's flagship businiess intelligence product.  I joined this team as a principal engineer
-                in order to apply more technical recent experience to the architecture of the database backing the PowerBI product, Analysis Services.
+                in order to apply my more technical recent experience to the architecture of the database backing the PowerBI product, Analysis Services.
                 Working alongside other principal engineers I had the opportunity to dive into an extensive code base stretching back
                 multiple decades in order to assist in architecting such features as precomputed aggregation and explicit in-memory caching.
             </p>
             <h2>Boundary.com<span>Development Manager - Apr 2014-Aug 2015 - Austin, TX</span></h2>
             <ul>
-                <li>Managed product development team of 15</li>
-                <li>Initially acquiried by Boundary to offer general purpose one second monitoring</li>
+                <li>Hired through acquisition, managed product development team of 15</li>
                 <li>Moved Graphdat technology into the forefront of the Boundary product offering</li>
                 <li>Restructured the team around a new technology base</li>
                 <li>Vastly improved scalability of the product in response to customer demand</li>
             </ul>
             <p>
-                Boundary acquired Graphdat.com in order to more broadly expand its existing network flow monitoring
+                Boundary acquired my company Graphdat.com in order to more broadly expand its existing network flow monitoring
                 service with more general purpose server metric monitoring while keeping one second resolution on both.
-                After acquisition I worked closely with engineering to integrate <b>Graphdat realtime graphs</b> onto existing dashboards
-                and also to add scalability for customer growth.  In terms of scalability we moved the existing explicit cluster
-                worker mapping scheme to a <b>consistent hash</b> based scheme (Guava), Zookeeper presence, with a <b>finer grained tuple</b> to better balance load.
-                Internal to the data storage worker I used a similar hashing scheme to <b>partition open files</b> among worker threads to better drop contention.
-                At the same time I added <b>skip lists</b> to time series host name lookups and utilized <b>memory mapped I/O</b> to greatly reduce system context switches and dirty page management.
-                The end result, our production data storage nodes now run comfortably doing <b>1.2M inserts/updates per second</b> with negligible CPU usage.
+                After acquisition I managed the combined engineering team to integrate <b>Graphdat realtime graphs</b> onto existing dashboards
+                and also to add scalability for customer growth.  I worked with the CEO, CTO, and other executives to gather consensus on product direction.
             </p>
-            <h2>Graphdat.com / Alphashack<span>CTO - Jul 2012-Apr 2014 - Seattle, WA</span></h2>
+            <h2>Graphdat.com<span>Development Manager - Jul 2012-Apr 2014 - Seattle, WA</span></h2>
             <ul>
                 <li>Managed all aspects of the business (investors, staffing, etc..) and development team of 5</li>
                 <li>Primary architect of the one second monitoring technology behind Graphdat.com</li>
@@ -204,34 +199,24 @@
                 <li>Acquired by Boundary.com</li>
             </ul>
             <p>
-                The idea behind Graphdat.com came about while working at C4 and experiencing extremely high gameday web traffic.
+                The idea behind Graphdat.com came about while working at C4 where I was managing the engineering behind a high traffic sports website which needed constant monitoring for performance.
                 We had some very expensive monitoring tools which could only refresh graphs every twenty seconds.  Our goal with Graphdat.com
                 was to provide a <b>cloud based</b> service, to monitor <b>any metric</b>, at <b>one second resolution</b>, <b>easily</b> and <b>cheaply</b>.
-                I designed and built the majority of the system which was composed of three main parts, a metric data collection <b>agent</b>,
-                fast backend <b>data storage</b>, and an interactive <b>graphing browser UI</b>.  For the <b>lowest overhead memory and CPU</b> the data collection agent was written
-                in C (open source libsigar for metric reading). Because we pre-aggregate data (similar to OLAP cube rollups) each point generated many other points so the data store
-                needed to be very efficient.  Our testing suggested we could get the best performance if I wrote a <b>custom built data store</b> in C.
-                Finally, for the UI, at the time we found client based vector graphics using SVG were sluggish so I instead built a <b>canvas based interactive graph</b>
-                which used a <b>sparse time range</b> data cache to optimize server communication.  I worked closely with one other engineer to release Graphdat.com
-                which was then <b>acquired</b> after approximately 2 years of development.
+                I pitched this idea to my prior CEO who agreed to fund our company of 5 for approximately 2 years.  I worked with engineers to design and build the user experience, 
+                data storage/retrieval engine, and a monitoring agent.  The company was bough by a competitor at the time, Boundary.com.
             </p>
-            <h2>PlayUp.com<span>CTO - Sep 2011-Jul 2012 - Melbourne, Australia</span></h2>
+            <h2>PlayUp.com<span>Development Manager - Sep 2011-Jul 2012 - Melbourne, AUS</span></h2>
             <ul>
                 <li>Technical and team leadership for a group of 50 building a social network mobile app for sports enthusiasts</li>
                 <li>Involved with team restructuring in order to streamline the business</li>
                 <li>Worked closely with the CEO and stakeholders to provide technical insight</li>
             </ul>
             <p>
-                PlayUp was in need of a direction change when I joined.  Agile development practices in conjunction with a
-                less technical CEO made it difficult to obtain a shared <b>understanding of release dates</b> and delays.  In addition
-                there were many projects unrelated to the primary company direction that were distracting and consuming valuable resources.
-                I worked with the CEO to hone in on the company vision and <b>articulated technical trade-offs</b> in terms that were <b>easy to understand</b>.
-                After which we decided to <b>drop some of the projects</b> not related to this vision.  Staff were reduced.  At the same time I proposed a change to the existing agile methodology
-                which provided <b>more realistic time estimates</b>.  Although there were many challenges we eventually shipped a complete rewrite of our
-                mobile sports social network in about <b>one half the time</b> the previous version took with a <b>minimal slip</b> and <b>lower burn rate</b>.  Of our remaining employees after the
-                initial restructure we had <b>minimal turnover</b>.
+                PlayUp was in need of a direction change when I joined.  There were delivery challenges and resourcing imbalances.
+                I worked with the CEO to hone in on the company vision and <b>articulated technical trade-offs</b> in terms that were <b>easy to understand</b> and <b>actionable</b>.
+                Resources were adjusted and refocused, new methodologies adopted, and a new version of our flagship application was shipped in one half of the expected time.
             </p>
-            <h2>Digital Five Sdn Bhd<span>CTO - 2009-2011 - Sydney, Australia</span></h2>
+            <h2>Digital Five Sdn Bhd<span>Development Manager - 2009-2011 - Sydney, AUS</span></h2>
             <ul>
                 <li>Technical and team leadership for full time group of 75 and 30 outsourced</li>
                 <li>Founded the Sydney satellite office after moving from Malaysia, built to a team of 50</li>
@@ -240,14 +225,13 @@
             </ul>
             <p>
                 After the acquisition of C4 my CEO had made a connection with someone at Usaha Tegas, a Malaysian conglomerate, at a time when one of their
-                media divisions needed some <b>new leadership</b>.  I was first relocated to Malaysia along with my CEO and another top ex-C4 employee.
-                Once in Malaysia we attempted to <b>revamp the engineering team</b> and <b>cut unneeded expenses</b>.  I travelled to India to <b>personally interview</b>
-                all our outsourcing candidates.  We did another 70 interviews for onshore developers with no candidate offers.  After nine months I recommended that the media division
+                media divisions needed some <b>new leadership</b>.  I was first relocated to Malaysia along with my CEO and another top ex-C4 employees.
+                Once in Malaysia we <b>revamped the engineering team</b> and <b>cut unneeded expenses</b>.  After evaluating our outsourcing partner I recommended that the media division
                 open a <b>new development office</b> based in Sydney, AU because of its proximity and the probability of finding better engineers.
-                I moved to Sydney to start a new office.  We then grew the office to approximately 50 while <b>rebuilding and improving the CMS</b> used
-                by the media division.  Our office was located next to the IPTV sister company called FetchTV which eventually <b>acquired</b> Digital Five.
+                I moved to Sydney to start a new office which grew to approximately 50 while <b>rebuilding and improving our content management system</b> used
+                by the media division.  The Sydney team was acquired by our IPTV sister company, FetchTV.
             </p>
-            <h2>C4<span>CTO - 2008-2009 - Sydney, Australia</span></h2>
+            <h2>C4<span>Development Manager - 2008-2009 - Sydney, AUS</span></h2>
             <ul>
                 <li>Technical and team leadership for a group of 40</li>
                 <li>Oversaw development of the two largest sports sites in Australia, AFL.COM.AU, NFL.COM.AU</li>
@@ -257,15 +241,12 @@
             </ul>
             <p>
                 The greatest challenge of C4 was managing expectation for a large, non-technical, population of <b>stakeholders</b> while
-                simultaneously assisting with the technical challenges related to websites which would change traffic profiles <b>dramatically
-                during game days</b>.  For example, unique visitors during a weekday may be several thousand but on a weekend with
-                matches we may see <b>4M unique visitors</b>.  This unique performance curve in conjunction with our general purpose CMS (DotNetNuke) which
-                was serving some rather <b>complicated sport summary data</b> made for some difficult performance scenarios.  I had to problem solve at the database tier
-                to find slow queries, remove xml transforms, stop intermediate sorts which turned <b>reads to writes</b>, and insure caching.  From there
-                I proposed and built a centralized <b>shared caching</b> solution which would become an early predecessor to REDIS open source.  It was during this
-                time that the beginning of the idea for Graphdat.com came about. C4 was <b>acquired</b> by Photon Group Pty Ltd.
+                simultaneously assisting with the technical challenges related to sports websites which would change traffic profiles <b>dramatically
+                during game days</b> (for example, a few thousand unique views / hr up to millions of uniques / hr in a day).  This unique performance curve in conjunction 
+                with complicated sports summary data made for some <b>difficult performance scenarios</b>.  I worked with engineers to create new technical approaches
+                then oversaw the implementation and deployment. It was during this time that the beginning of the idea for Graphdat.com came about. C4 was <b>acquired</b> by Photon Group Pty Ltd.
             </p>
-            <h2>Purpose Built Software<span>Architect - 2001-2008 - Sydney, Australia</span></h2>
+            <h2>Purpose Built Software<span>Architect - 2001-2008 - Sydney, AUS</span></h2>
             <ul>
                 <li>Designed and built the Protara development environment for the creation of Windows mobile apps</li>
                 <li>Utilized JavaScript (spidermonkey), SQLite, Scintilla, etc.. open source to provide a rich experience</li>
@@ -273,28 +254,20 @@
                 <li>Eventually became a JavaScript powered, markup rendered, SQL backed, mobile app development platform many years before the browser made this mainstream</li>
             </ul>
             <p>
-                When I joined the company needed to be able to <b>rapidly prototype</b> Windows mobile applications.  After looking
-                at some existing toolkits I proposed a different solution taking advantage of open source which had recently become
-                available.  I was the core developer for this <b>new development environment</b> which would take advantage of the Spider Monkey <b>JavaScript</b>
-                embeddable library, the Scintilla <b>text editor</b>, a <b>SQLite</b> data store, and a custom <b>UI framework using markup</b> and a flow layout.  I built a
-                a desktop environment which had rich text editing, auto-complete, an emulator and <b>remote device debugging</b> support.  I also built the mobile device runtime.
+                When I joined the company needed to be able to <b>rapidly prototype</b> Windows mobile applications.  Designed a built a rapid application development
+                system which included a development environment, debugger, sql storage and deployment to handheld devices.
                 This became a <b>new product</b> called Protara which was marketed outside of the service oriented business.
             </p>
-            <h2>Playmachine.net / Quite Giant<span>Owner / Founder - 1999-2001 - Seattle, WA</span></h2>
+            <h2>Playmachine.net<span>Founder / Team Lead - 1999-2001 - Seattle, WA</span></h2>
             <ul>
-                <li>Founder and team manager</li>
+                <li>Managed a team of 10 which included engineering, testing, and marketing</li>
                 <li>Created a pay-per-play (micro-commerce) media service focusing on music and games</li>
                 <li>Built authorization and on-the-fly decryption of digital content</li>
-                <li>Managed a team of 10 which included engineering, testing, and marketing</li>
                 <li>Negotiated contracts with over a dozen game makers and the 3 largest music license rights providers</li>
             </ul>
             <p>
-                After working at Microsoft for some time I decided to take a go at my own <b>startup</b>.  The idea was to make it easy to access digital entertainment content
-                in the form of <b>games and music</b> at a pay-per-play pricepoint.  This being a time before there was much <b>micro-commerce</b> in existence the
-                technical challenge was to build the tools for <b>content distribution</b>, <b>authentication</b>, and <b>account management</b> while also juggling the day-to-day
-                issues of <b>managing a company</b> of diverse individuals not to mention the challenges of <b>raising funding</b>.  The end result was Playmachine.net, an <b>attractive user
-                interface</b> with an easy to use process for acquiring <b>dozens of games</b>, <b>thousands of songs</b>, all charged <b>per play</b>.  Close to <b>one thousand
-                paying customers</b> were gained before the business was closed during the 2000 shift in internet investing.
+                The idea behind this <b>startup</b> was to make it easy to access digital entertainment content in the form of <b>games and music</b> at a pay-per-play pricepoint.
+                This being a time before <b>micro-commerce</b> and little <b>digital content distribution</b>.  New technology was created and built, content rights were negotiated then distributed online, and users could spend digital coins for each use.
             </p>
             <h2>Microsoft<span>Lead Engineer - 1993-1999 - Seattle, WA</span></h2>
             <ul>
@@ -308,14 +281,12 @@
 
         <dt>Skills</dt>
         <dd>
-            <h2>Open source</h2>
-
-            <p>Some open source I've used includes Redis, MySql, NGinx, Solr, HBase, Cassandra, NodeJS, Zookeeper, Git, and ZeroMQ.
-            This has mostly taken place on Linux based operating systems.</p>
-
-            <h2>Not so open source</h2>
-
-            <p>Grew up on Microsoft based technology using Windows, .NET, and MSSQL</p>
+            <ul>
+                <li>Management of small to large engineering teams, onshore and off</li>
+                <li>Good communication skiils, especially in summarizing technical problems to varied audiences</li>
+                <li>Ability to take part in technical problem solving</li>
+                <li>Wide variety of software experience and ideologies</li>
+            </ul>
         </dd>
 
         <dd class="clear"></dd>
